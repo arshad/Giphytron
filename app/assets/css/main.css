@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 36px 0 0;
+  overflow: hidden;
+  font: 13px/1.4 Helvetica, arial, sans-serif;
+  color: #333;
+}
+
+form.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+form.search-form input.keywords {
+  border: 0;
+  width: 100%;
+  padding: 5px 36px 5px 10px;
+  height: 36px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+}
+form.search-form input.submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: url('../images/bg-search.png') no-repeat center;
+  text-indent: -9999px;
+}
+
+.console {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #e0e0e0;
+  padding: 8px 10px;
+  font-size: 12px;
+  background: #ffffff;
+}
+
+.results {
+  overflow: auto;
+  height: 340px;
+  background: white url('../images/bg-giphy.gif') no-repeat center;
+}
+.results.loaded {
+  background: white;
+}
+ul.grid {
+  margin: 0 0 0 -8px;
+  padding: 0;
+  overflow: hidden;
+}
+ul.grid li {
+  list-style: none outside none;
+  float: left;
+  margin: 0 0 8px 8px;
+}
+ul.grid li a {
+  width: 200px;
+  display: block;
+}
+ul.grid li a img {
+  width: 100%;
+  height: auto;
+}

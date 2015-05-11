@@ -1,0 +1,9 @@
+<ul class="grid">
+  {% for result in results %}
+    <li>
+      <a href="{{ result.images.downsized.url }}">
+        <img src="{{ result.images.downsized.url }}" />
+      </a>
+    </li>
+  {% endfor %}
+</ul>

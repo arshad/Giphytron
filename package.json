@@ -1,0 +1,27 @@
+{
+  "name": "giphytron",
+  "productName": "Giphytron",
+  "version": "0.0.1",
+  "description": "Mac tray app for Giphy",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ $npm_package_productName --platform=darwin --arch=x64 --version=0.25.1 --prune --asar --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.git"
+  },
+  "keywords": [
+    "giphy",
+    "mac",
+    "electron"
+  ],
+  "author": "Arshad Chummun <arshad@chummun.com> (http://arshad.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "~0.25.3-2",
+    "electron-rebuild": "~0.1.4"
+  },
+  "dependencies": {
+    "menubar": "~2.0.4",
+    "request": "~2.55.0",
+    "swig": "~1.4.2"
+  }
+}
